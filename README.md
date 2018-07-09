@@ -14,14 +14,15 @@ Summary: An easy-to-use Python library for accessing the Twitter API.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/tweepy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/tweepy-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/tweepy-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/tweepy-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/tweepy-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/tweepy-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/tweepy-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/tweepy-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/tweepy/badges/version.svg)](https://anaconda.org/conda-forge/tweepy)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/tweepy/badges/downloads.svg)](https://anaconda.org/conda-forge/tweepy)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-tweepy-green.svg)](https://anaconda.org/conda-forge/tweepy) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/tweepy.svg)](https://anaconda.org/conda-forge/tweepy) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/tweepy.svg)](https://anaconda.org/conda-forge/tweepy) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/tweepy.svg)](https://anaconda.org/conda-forge/tweepy) |
 
 Installing tweepy
 =================
@@ -66,6 +67,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
