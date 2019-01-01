@@ -1,6 +1,6 @@
 {% set name = "tweepy" %}
-{% set version = "3.6.0" %}
-{% set sha256 = "901500666de5e265d93e611dc05066bb020481c85550d6bcbf8030212938902c" %}
+{% set version = "3.7.0" %}
+{% set sha256 = "fe85a79f58a01dd335968523b91c5fce760e7fe78bf25a6e71c72204fe499d0b" %}
 
 package:
   name: {{ name|lower }}
@@ -13,12 +13,12 @@ source:
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
     - pip
   run:
     - python
