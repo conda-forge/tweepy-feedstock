@@ -1,15 +1,12 @@
-{% set name = "tweepy" %}
 {% set version = "3.7.0" %}
-{% set sha256 = "fe85a79f58a01dd335968523b91c5fce760e7fe78bf25a6e71c72204fe499d0b" %}
 
 package:
-  name: {{ name|lower }}
+  name: tweepy
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/t/tweepy/tweepy-{{ version }}.tar.gz
+  sha256: fe85a79f58a01dd335968523b91c5fce760e7fe78bf25a6e71c72204fe499d0b
 
 build:
   number: 0
@@ -22,10 +19,10 @@ requirements:
     - pip
   run:
     - python
-    - requests            >=2.11.1
-    - requests-oauthlib   >=0.7.0
-    - six                 >=1.10.0
-    - pysocks             >=1.5.7
+    - requests >=2.11.1
+    - requests-oauthlib >=0.7.0
+    - six >=1.10.0
+    - pysocks >=1.5.7
 
 test:
   imports:
@@ -34,8 +31,9 @@ test:
 about:
   home: http://www.tweepy.org
   license: MIT
+  license_file: LICENSE
   license_family: MIT
-  summary: 'An easy-to-use Python library for accessing the Twitter API.'
+  summary: 'An easy-to-use Python library for accessing the Twitter API'
 
   doc_url: http://tweepy.readthedocs.io
   dev_url: https://github.com/tweepy/tweepy
@@ -43,3 +41,4 @@ about:
 extra:
   recipe-maintainers:
     - nikicc
+    - ocefpaf

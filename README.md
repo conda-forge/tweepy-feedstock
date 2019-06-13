@@ -1,23 +1,28 @@
 About tweepy
 ============
 
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
-
 Home: http://www.tweepy.org
 
 Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: An easy-to-use Python library for accessing the Twitter API.
+Summary: An easy-to-use Python library for accessing the Twitter API
 
 
 
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/tweepy-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/tweepy-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5131&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/tweepy-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
@@ -50,6 +55,8 @@ conda search tweepy --channel conda-forge
 
 About conda-forge
 =================
+
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -110,4 +117,5 @@ Feedstock Maintainers
 =====================
 
 * [@nikicc](https://github.com/nikicc/)
+* [@ocefpaf](https://github.com/ocefpaf/)
 
