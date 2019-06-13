@@ -31,6 +31,7 @@ test:
 about:
   home: http://www.tweepy.org
   license: MIT
+  license_file: LICENSE
   license_family: MIT
   summary: 'An easy-to-use Python library for accessing the Twitter API'
 
