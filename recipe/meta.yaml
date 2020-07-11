@@ -1,4 +1,4 @@
-{% set version = "3.8.0" %}
+{% set version = "3.9.0" %}
 
 package:
   name: tweepy
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/tweepy/tweepy-{{ version }}.tar.gz
-  sha256: 8abd828ba51a85a2b5bb7373715d6d3bb32d18ac624e3a4db02e4ef8ab48316b
+  sha256: bfd19a5c11f35f7f199c795f99d9cbf8a52eb33f0ecfb6c91ee10b601180f604
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -33,7 +33,7 @@ about:
   license: MIT
   license_file: LICENSE
   license_family: MIT
-  summary: 'An easy-to-use Python library for accessing the Twitter API'
+  summary: An easy-to-use Python library for accessing the Twitter API
 
   doc_url: http://tweepy.readthedocs.io
   dev_url: https://github.com/tweepy/tweepy
