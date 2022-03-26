@@ -15,18 +15,21 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.7
     - pip
   run:
-    - python >=3.5
-    - requests >=2.11.1
-    - requests-oauthlib >=0.7.0
-    - six >=1.10.0
-    - pysocks >=1.5.7
+    - python >=3.7
+    - oauthlib >=3.2.0,<4
+    - requests >=2.27.0,<3
+    - requests-oauthlib >=1.2.0,<2
 
 test:
   imports:
     - tweepy
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://www.tweepy.org
