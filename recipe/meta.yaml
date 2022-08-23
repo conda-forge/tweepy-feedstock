@@ -1,4 +1,4 @@
-{% set version = "4.10.0" %}
+{% set version = "4.10.1" %}
 
 package:
   name: tweepy
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/tweepy/tweepy-{{ version }}.tar.gz
-  sha256: 7f92574920c2f233663fff154745fc2bb0d10aedc23617379a912d8e4fefa399
+  sha256: 310193775d7fc381abd6f37021a9af27f7e9edfcce5ec51bd73ea5f30c21fa61
 
 build:
   number: 0
@@ -19,9 +19,9 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - oauthlib >=3.2.0,<4
     - requests >=2.27.0,<3
     - requests-oauthlib >=1.2.0,<2
+    - oauthlib >=3.2.0,<4
 
 test:
   imports:
