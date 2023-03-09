@@ -1,11 +1,11 @@
-About tweepy
-============
+About tweepy-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tweepy-feedstock/blob/main/LICENSE.txt)
 
 Home: http://www.tweepy.org
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tweepy-feedstock/blob/main/LICENSE.txt)
 
 Summary: An easy-to-use Python library for accessing the Twitter API
 
