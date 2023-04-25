@@ -1,4 +1,4 @@
-{% set version = "4.13.0" %}
+{% set version = "4.14.0" %}
 
 package:
   name: tweepy
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/tweepy/tweepy-{{ version }}.tar.gz
-  sha256: 097425335f9f6674826ba7e72b2247bbca39c9ca0a0bd82f30a38a5bef8c6c88
+  sha256: 1f9f1707d6972de6cff6c5fd90dfe6a449cd2e0d70bd40043ffab01e07a06c8c
 
 build:
   number: 0
