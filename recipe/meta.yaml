@@ -1,5 +1,5 @@
 {% set name = "tweepy" %}
-{% set version = "4.14.0" %}
+{% set version = "4.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tweepy-{{ version }}.tar.gz
-  sha256: 1f9f1707d6972de6cff6c5fd90dfe6a449cd2e0d70bd40043ffab01e07a06c8c
+  sha256: 1345cbcdf0a75e2d89f424c559fd49fda4d8cd7be25cd5131e3b57bad8a21d76
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -23,7 +23,7 @@ requirements:
     - python >={{ python_min }}
     - oauthlib >=3.2.0,<4
     - requests >=2.27.0,<3
-    - requests-oauthlib >=1.2.0,<2
+    - requests-oauthlib >=1.2.0,<3
 
 test:
   imports:
