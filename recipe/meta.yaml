@@ -1,5 +1,5 @@
 {% set name = "tweepy" %}
-{% set version = "4.15.0" %}
+{% set version = "4.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tweepy-{{ version }}.tar.gz
-  sha256: 1345cbcdf0a75e2d89f424c559fd49fda4d8cd7be25cd5131e3b57bad8a21d76
+  sha256: 1d95cbdc50bf6353a387f881f2584eaf60d14e00dbbdd8872a73de79c66878e3
 
 build:
   noarch: python
@@ -17,6 +17,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
+    - flit-core <4
     - setuptools
     - pip
   run:
